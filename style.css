@@ -515,7 +515,7 @@ span {
     }
 }
 
-@media (max-width : 768px) {
+@media (max-width : 600px) {
     #menu-icon {
         font-size: 25px;
         display: block;
