@@ -42,7 +42,7 @@ body{
     display : flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 1000;
+    z-index: 100;
 }
 
 .header.sticky {
@@ -55,12 +55,9 @@ body{
     font-weight: 600;
     cursor : default;
 }
-.navbar{
-    display: flex;
-    gap: 25px;
-}
+
 .navbar a{
-    font-size: 18px;
+    font-size: 1.1rem;
     color: var(--text-color);
     margin-left: 3.5rem;
     transition: 0.3s ease;
@@ -73,18 +70,7 @@ body{
 .navbar a:hover, .navbar a.action{
     color: var(--main-color);
 }
-.hamburger{
-    display: none;
-    flex-direction: column;
-    gap: 6px;
-    cursor: pointer;
-}
-.hamburger span{
-    width: 28px;
-    height: 3px;
-    background: var(--text-color);
-    border-radius: 3px;
-}
+
 #menu-icon {
     color : var(--text-color);
     font-size: 2rem;
@@ -97,8 +83,8 @@ body{
     justify-content: space-between;
     align-items: center;
     gap: 2rem;
-    padding-bottom: 110px;
-    overflow: hidden;
+    min-height: 100vh;
+    padding-bottom: 90px;
 }
 
 .home-img {
@@ -108,8 +94,7 @@ body{
 
 .home-img img{
     width: 100%;
-    max-width: 400px;
-    height: auto;
+    max-width: 380px;
     animation: floatImage 4s ease-in-out infinite;
     -webkit-animation: floatImage 4s ease-in-out infinite;
 }
@@ -140,7 +125,7 @@ body{
 
 .home-content {
     margin-top: -50px;
-    width : 100%;
+    width : 90%;
 }
 
 .home-content h3{
@@ -536,19 +521,17 @@ span {
     }
     .navbar{
         position: absolute;
-        top: 70px;
-        right: 0;
-        width: 200px;
-        padding: 20px;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
         background-color: var(--bg-color);
         border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
         display: none;
-        flex-direction: column;
-        gap: 15px;
     }
     .navbar.active {
-        display: flex;
+        display: block;
     }
     .navbar a{
         text-align: center;
@@ -556,26 +539,23 @@ span {
         font-size: 1.8rem;
         margin: 4.1rem 0;
     }
-    .hamburger{
-        display: flex;
-    }
     section{
         min-height: 90vh;
     }
     .home{
-        flex-direction: column-reverse;
+         flex-direction: column-reverse;
         text-align: center;
         padding-top: 6rem;
     }
-     .home-content {
+    .home-content {
         margin-top: 0;
         width: 100%;
     }
-      .home-content h3 {
+    .home-content h3 {
         font-size: 2.3rem;
         margin-top: 1rem !important;
     }
-   .home-content h1 {
+      .home-content h1 {
         margin-top: 0.5rem;
         font-size: 3rem;
         letter-spacing: 1px;
@@ -591,20 +571,22 @@ span {
         display: flex;
         justify-content: center;
     }
-    .home-img img{
+
+    .home-img img {
         width: 75vw;
         max-width: 350px;
     }
-     .about {
+
+    .about {
         flex-direction: column-reverse;
         text-align: center;
         width: 100%;
         margin-bottom: 2rem;
     }
-
-     .about-content h2 {
+    .about-content h2 {
         text-align: center;
     }
+
     .about-content p {
         font-size: 0.9rem;
         letter-spacing: 0.5px;
@@ -618,7 +600,7 @@ span {
         padding-top: 3rem;
     }
     .skills-container{
-        grid-template-columns: 1fr;       
+       grid-template-columns: 1fr;
         gap: 1.5rem;
     }
     .skills-container .skills-box{
@@ -631,12 +613,10 @@ span {
     .project-box img{
         height: auto;
     }
-    .contact {
-        min-height: auto;
-        padding-top: 4rem;
-    }
-
-    .contact form .input-box input {
+    .contact form .input-box input{
         width: 100%;
+    }
+    .contact h2{
+        margin-top: 50px;
     }
 }
