@@ -42,7 +42,7 @@ body{
     display : flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
 }
 
 .header.sticky {
@@ -55,9 +55,12 @@ body{
     font-weight: 600;
     cursor : default;
 }
-
+.navbar{
+    display: flex;
+    gap: 25px;
+}
 .navbar a{
-    font-size: 1.1rem;
+    font-size: 18px;
     color: var(--text-color);
     margin-left: 3.5rem;
     transition: 0.3s ease;
@@ -70,7 +73,18 @@ body{
 .navbar a:hover, .navbar a.action{
     color: var(--main-color);
 }
-
+.hamburger{
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+.hamburger span{
+    width: 28px;
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 3px;
+}
 #menu-icon {
     color : var(--text-color);
     font-size: 2rem;
@@ -515,30 +529,35 @@ span {
     }
 }
 
-@media (max-width : 600px) {
+@media (max-width : 768px) {
     #menu-icon {
         font-size: 25px;
         display: block;
     }
     .navbar{
         position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
+        top: 70px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
         background-color: var(--bg-color);
         border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
-        display: flex;
+        display: none;
+        flex-direction: column;
+        gap: 15px;
     }
     .navbar.active {
-        display: block;
+        display: flex;
     }
     .navbar a{
         text-align: center;
         display: block;
         font-size: 1.8rem;
         margin: 4.1rem 0;
+    }
+    .hamburger{
+        display: flex;
     }
     section{
         min-height: 90vh;
