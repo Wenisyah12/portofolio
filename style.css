@@ -26,7 +26,6 @@ body{
     background : var(--bg-color);
     color : var(--text-color);
 }
-
 .section{
     min-height: 100vh;
     padding : 7rem 9% 2rem;
@@ -93,7 +92,7 @@ body{
 }
 
 .home-img img{
-    width: 600px;
+    width: 400px;
     animation: floatImage 4s ease-in-out infinite;
     -webkit-animation: floatImage 4s ease-in-out infinite;
 }
@@ -205,6 +204,7 @@ span {
 }
 
 .about{
+    padding-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;

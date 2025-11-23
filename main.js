@@ -1,14 +1,15 @@
 let menuIcon =document.querySelector("#menu-icon");
 let navbar =document.querySelector(".navbar");
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle("fa-bars");
     navbar.classList.toggle("active");
+     menuIcon.classList.toggle("fa-xmark");
 };
 let section = document.querySelectorAll("section");
 let navLinks =document.querySelectorAll("header nav a");
 window.onscroll =  () => {
-    sections.forEach(sec => {
-        let top = window.scrollY;
+    let top = window.scrollY;
+
+    section.forEach(sec => {
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute("id");
@@ -22,8 +23,10 @@ window.onscroll =  () => {
 });
 let header =document.querySelector("header");
 header.classList.toggle("sticky", top > 100);
-menuIcon.classList.remove("fa-bars");
-navbar.classList.remove("active");
+if (navbar.classList.contains("active")){
+    navbar.classList.remove("active");
+    menuIcon.classList.remove("fa-xmark");
+}
 };
 
 ScrollReveal({
