@@ -25,8 +25,9 @@ html{
 body{
     background : var(--bg-color);
     color : var(--text-color);
+    overflow-x: hidden;
 }
-.section{
+section{
     min-height: 100vh;
     padding : 7rem 9% 2rem;
 }
@@ -513,12 +514,17 @@ span {
     }
 }
 
-@media (max-width : 768px) {
+@media (max-width : 600px) {
     #menu-icon {
-         display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        display: block;
         font-size: 30px;
-        cursor: pointer;
         z-index: 999;
+    }
+    .header{
+        padding: 1rem 4%;
     }
     .navbar{
         position: absolute;
