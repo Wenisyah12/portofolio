@@ -515,8 +515,9 @@ span {
 
 @media (max-width : 768px) {
     #menu-icon {
-        display: block;
-        position: relative;
+         display: block;
+        font-size: 30px;
+        cursor: pointer;
         z-index: 999;
     }
     .navbar{
