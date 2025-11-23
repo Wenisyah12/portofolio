@@ -93,7 +93,7 @@ body{
 }
 
 .home-img img{
-    width: 100%;
+    width: 600px;
     animation: floatImage 4s ease-in-out infinite;
     -webkit-animation: floatImage 4s ease-in-out infinite;
 }
@@ -544,7 +544,7 @@ span {
         min-height: 90vh;
     }
     .home{
-         flex-direction: column-reverse;
+        flex-direction: column-reverse;
         text-align: center;
         padding-top: 6rem;
     }

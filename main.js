@@ -1,7 +1,7 @@
 let menuIcon =document.querySelector("#menu-icon");
 let navbar =document.querySelector(".navbar");
 menuIcon.onclick = () => {
-    menuIcon.classList.toggle("bx-x");
+    menuIcon.classList.toggle("fa-bars");
     navbar.classList.toggle("active");
 };
 let section = document.querySelectorAll("section");
@@ -22,7 +22,7 @@ window.onscroll =  () => {
 });
 let header =document.querySelector("header");
 header.classList.toggle("sticky", top > 100);
-menuIcon.classList.remove("bx-x");
+menuIcon.classList.remove("fa-bars");
 navbar.classList.remove("active");
 };
 
