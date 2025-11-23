@@ -94,7 +94,6 @@ body{
 
 .home-img img{
     width: 100%;
-    max-width: 380px;
     animation: floatImage 4s ease-in-out infinite;
     -webkit-animation: floatImage 4s ease-in-out infinite;
 }
