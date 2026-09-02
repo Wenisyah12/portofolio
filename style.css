@@ -446,6 +446,9 @@ span {
     -o-border-radius: 0.5rem;
     margin: 0.4rem 0;
 }
+.input-box input::placeholder, textarea::placeholder{
+    color:var(--text-color);
+}
 
 .contact form .input-box input{
     width: 49%;
@@ -609,7 +612,10 @@ span {
     }
     .skills{
         height: auto;
-        margin-top:-50px
+        margin-top:-50px;
+    }
+    .skills h2{
+        margin-bottom: -50px;
     }
     .skills-container{
        grid-template-columns: 1fr;
