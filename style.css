@@ -626,7 +626,7 @@ span {
     }
     .project-container{
         grid-template-columns: 1fr;
-        height: 100px;
+        height: auto;
     }
     .project-box img{
         height: auto;
