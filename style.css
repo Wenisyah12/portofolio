@@ -242,11 +242,10 @@ span {
 
 #skills {
     text-align: center;
-    height: 150vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 0px;
 }
 
 .skills h2{
@@ -410,15 +409,10 @@ span {
 }
 
 .contact h2{
-    margin-bottom: 3rem;
+    margin-top:-2rem;
+    margin-bottom: 1rem;
 }
 
-.contact form{
-    max-width: 45rem;
-    margin: 1rem auto;
-    text-align: center;
-    margin-bottom: 3rem;
-}
 .contact{
     padding: 120px 0;
     min-height: 120vh;
@@ -426,9 +420,10 @@ span {
 
 .contact form{
     max-width: 45rem;
+    margin-top:1rem;
     margin: 1rem auto;
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 .contact form .input-box{
