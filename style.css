@@ -613,6 +613,7 @@ span {
     }
     .skills{
         height: auto;
+        margin-top:-50px
     }
     .skills-container{
        grid-template-columns: 1fr;
