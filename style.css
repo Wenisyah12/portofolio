@@ -240,7 +240,7 @@ span {
     color: var(--main-color);
 }
 
-#skills {
+.skills {
     text-align: center;
     height: 100vh;
     display: flex;
@@ -611,15 +611,16 @@ span {
         margin-top: -100px;
     }
     .skills{
+        display: block;
         height: auto;
-        margin-top: 20px;
     }
     .skills h2{
-        margin-bottom: -50px;
+        margin-top: 150px;
     }
     .skills-container{
-       grid-template-columns: 1fr;
+       grid-template-columns: repeat(2,1fr);
         gap: 1rem;
+        margin-top: 15px;
     }
     .skills-container .skills-box{
         padding: 1rem 2rem 3rem;
