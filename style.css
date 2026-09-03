@@ -657,4 +657,7 @@ span {
     .contact h2{
         margin-top: 50px;
     }
+    .footer{
+        margin-bottom: 0;
+    }
 }
