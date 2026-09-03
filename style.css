@@ -648,23 +648,14 @@ span {
     }
     
     .contact{
-    min-height: 40vh;
-    padding:10px 0;
-    margin-top: 2rem;
-    
-    }
-
-    .contact h2{
-        margin-top: -2rem;
-    }
-    .contact form{
-        margin-top: -1rem;
+    min-height: 50vh;
+    padding:0;
     }
     .contact form .input-box input{
         width: 100%;
     }
     .contact h2{
-        margin-top: 50px;
+        margin-top: 30px;
     }
     .footer{
         margin-bottom: 0;
