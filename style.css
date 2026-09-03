@@ -628,6 +628,7 @@ span {
     .skills-container .skills-box{
         padding: 1rem 2rem 3rem;
     }
+
     .project-container{
         margin-left: 10px;
         margin-right: 10px;
@@ -648,14 +649,14 @@ span {
     }
     
     .contact{
-    min-height: 50vh;
+    min-height: 80vh;
     padding:0;
     }
     .contact form .input-box input{
         width: 100%;
     }
     .contact h2{
-        margin-top: 30px;
+        margin-top: 60px;
     }
     .footer{
         margin-bottom: 0;
