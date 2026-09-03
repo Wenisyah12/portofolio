@@ -646,6 +646,11 @@ span {
     .project-box img{
         height: auto;
     }
+    
+    .contact{
+    min-height: 50vh;
+    padding:50px 0;
+    }
     .contact form .input-box input{
         width: 100%;
     }
