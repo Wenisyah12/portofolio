@@ -651,12 +651,13 @@ span {
     .contact{
     min-height: 80vh;
     padding:0;
+    scroll-margin-top: 80px;
     }
     .contact form .input-box input{
         width: 100%;
     }
     .contact h2{
-        margin-top: 60px;
+        margin-top: 7rem;
     }
     .footer{
         margin-bottom: 0;
