@@ -651,8 +651,8 @@ span {
     .contact{
     min-height: 80vh;
     padding:0;
-    scroll-margin-top: 80px;
     }
+    
     .contact form .input-box input{
         width: 100%;
     }
